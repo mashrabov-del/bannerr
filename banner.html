@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Banner Misoli</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        /* Nike banner konteyneri */
+        .nike-banner {
+            width: 100%;
+            max-width: 800px;
+            background: linear-gradient(135deg, #111111 0%, #2b2b2b 100%);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+            box-sizing: border-box;
+            font-family: 'Impact', Arial, sans-serif;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        /* Matn qismi */
+        .nike-content {
+            max-width: 55%;
+            z-index: 2;
+        }
+
+        .nike-logo {
+            font-size: 20px;
+            font-style: italic;
+            letter-spacing: 3px;
+            color: #fa541c;
+            margin-bottom: 10px;
+        }
+
+        .nike-title {
+            font-size: 34px;
+            text-transform: uppercase;
+            margin: 0 0 15px 0;
+            line-height: 1.1;
+            letter-spacing: 1px;
+            font-style: italic;
+        }
+
+        .nike-text {
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+            color: #d9d9d9;
+            margin-bottom: 25px;
+        }
+
+        /* Tugma dizayni */
+        .nike-btn {
+            display: inline-block;
+            background-color: #fa541c;
+            color: #ffffff;
+            padding: 12px 28px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .nike-btn:hover {
+            background-color: #e04815;
+            transform: scale(1.05);
+        }
+
+        /* Rasm qismi */
+        .nike-image img {
+            max-width: 260px;
+            height: auto;
+            display: block;
+            transform: rotate(-15deg);
+            transition: transform 0.3s;
+        }
+
+        .nike-banner:hover .nike-image img {
+            transform: rotate(0deg) scale(1.05);
+        }
+
+        /* --- SMARTFON VA TELEFONLAR UCHUN MOSLAMA --- */
+        @media (max-width: 768px) {
+            .nike-banner {
+                flex-direction: column;
+                text-align: center;
+                padding: 25px 20px;
+            }
+            .nike-content {
+                max-width: 100%;
+            }
+            .nike-title {
+                font-size: 24px;
+            }
+            .nike-image {
+                margin-top: 20px;
+            }
+            .nike-image img {
+                max-width: 200px;
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nike-banner">
+        <div class="nike-content">
+            <div class="nike-logo">NIKE AIR MAX</div>
+            <h2 class="nike-title">O'zingni yurayotgandek emas uchoyotgandek xis qilishni istaysanmi?!✨</h2>
+            <p class="nike-text">Yangi xisyotlarni kashf et ularni jilovlama hoziroq xarid qil!</p>
+            <a href="https://uzum.uz/uz/product/nike-air-max-2420669?skuId=8698634" class="nike-btn" target="_blank">Sotib olish</a>
+        </div>
+        <div class="nike-image">
+            <img src="https://images.uzum.uz/d6itbmu9u1gahuorm2r0/t_product_540_high.jpg" alt="Nike Shoes">
+        </div>
+    </div>
+
+</body>
+</html>
